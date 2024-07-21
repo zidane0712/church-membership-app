@@ -12,4 +12,10 @@ router
   .get(asyncHandler(membershipController.index))
   .post(asyncHandler(membershipController.addMember));
 
+router.route("/search").get(asyncHandler(membershipController.getMembers));
+
+router
+  .route("/celebrants")
+  .get(asyncHandler(membershipController.getBirthdayCelebrants));
+
 module.exports = router;
