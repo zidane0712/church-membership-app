@@ -14,8 +14,8 @@ router
 
 router.route("/search").get(asyncHandler(membershipController.getMembers));
 
-router
-  .route("/celebrants")
-  .get(asyncHandler(membershipController.getBirthdayCelebrants));
+// router
+//   .route("/celebrants")
+//   .get(asyncHandler(membershipController.getBirthdayCelebrants));
 
 module.exports = router;
